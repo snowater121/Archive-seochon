@@ -1,6 +1,0 @@
-{
-  "name": "Archive Seochon",
-  "description": "당신의 옷장과 책장은 같은 언어를 쓴다. 고전문학의 문장과 정서를 빈티지 패션 언어로 번역하는 O2O 문화·커머스 서비스",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
