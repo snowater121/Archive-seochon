@@ -5,18 +5,14 @@
 
 import express from 'express';
 import path from 'path';
-import { fileURLToPath } from 'url';
 import { GoogleGenAI, Type } from '@google/genai';
 import dotenv from 'dotenv';
 import { createServer as createViteServer } from 'vite';
 
 dotenv.config();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 const app = express();
-const PORT = 3000;
+const PORT = parseInt(process.env.PORT || '3000');
 
 // Increase payload limit for base64 image uploads
 app.use(express.json({ limit: '12mb' }));
@@ -609,6 +605,8 @@ Make sure you choose a highly matching classic literature book and an accessory 
 // --- PLATFORM DEV SERVER AND PRODUCTION SERVING MIDDLEWARES ---
 
 async function startServer() {
+  if (!process.env.NODE_ENV) process.env.NODE_ENV = 'production';
+
   if (process.env.NODE_ENV !== 'production') {
     const vite = await createViteServer({
       server: { middlewareMode: true },
