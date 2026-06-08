@@ -92,13 +92,12 @@ export default function HomeSection({ onStartAnalyze }: HomeSectionProps) {
           — VOLUME I: SEOCHON ATELIER ARCHIVE —
         </p>
 
-        <h2 className="font-serif text-3xl sm:text-5xl font-extrabold text-ink leading-[1.25] tracking-tight mb-8">
-          “당신의 옷장과 책장이 <br className="sm:hidden" />
-          같은 언어로 연결됩니다.”
+        <h2 className="font-serif text-[1.25rem] sm:text-3xl md:text-4xl lg:text-[2.75rem] xl:text-[3.25rem] font-extrabold text-ink leading-[1.3] tracking-normal sm:tracking-tight mb-8 break-keep px-2 mx-auto max-w-4xl">
+          “당신의 옷장과 책장이 같은 언어로 연결됩니다.”
         </h2>
 
-        <p className="text-[#635F57] text-sm sm:text-base leading-relaxed max-w-2xl mx-auto font-serif tracking-wide mb-10 border-l border-r border-[#D9CFBE] px-6 py-2">
-          우리가 입는 오늘의 의복은 단지 표면의 직조가 아닌, 매 순간 써내려 간 사색의 단락입니다.<br className="hidden sm:inline" />
+        <p className="text-[#635F57] text-xs sm:text-sm md:text-base leading-loose max-w-2xl mx-auto font-serif tracking-wide mb-10 border-l border-r border-[#D9CFBE] px-4 sm:px-6 py-2.5 break-keep text-center">
+          우리가 입는 오늘의 의복은 단지 표면의 직조가 아닌, 매 순간 써내려 간 사색의 단락입니다.
           오늘 당신이 고른 색채의 온도, 선의 아웃라인, 감촉의 단면을 고전의 문장으로 해설해 드립니다.
         </p>
 
@@ -158,8 +157,8 @@ export default function HomeSection({ onStartAnalyze }: HomeSectionProps) {
                 <span className="font-mono text-[11px] text-burgundy tracking-widest block uppercase font-bold">
                   RESIDENT WRITER: 이상 (Yi Sang, 1910–1937)
                 </span>
-                <h3 className="font-serif text-2xl sm:text-3xl font-extrabold text-ink leading-tight">
-                  박제된 기형의 옷감에 <br className="sm:hidden" />날개를 달아내다
+                <h3 className="font-serif text-xl sm:text-2xl md:text-3xl font-extrabold text-ink leading-tight break-keep">
+                  박제된 기형의 옷감에 날개를 달아내다
                 </h3>
               </div>
 
@@ -380,14 +379,13 @@ export default function HomeSection({ onStartAnalyze }: HomeSectionProps) {
       </section>
 
       {/* 5. Delicate Poetic Philosophy Footer */}
-      <section className="bg-ink text-paper py-16 px-4 text-center relative overflow-hidden torn-bottom">
-        <div className="max-w-xl mx-auto space-y-4">
-          <Book className="w-6 h-6 text-burgundy mx-auto pulse-indicator" />
-          <blockquote className="font-serif text-base sm:text-lg leading-relaxed text-paper-cream font-medium">
-            "독서가 고독에 질감을 더하는 원사의 소품질이라면,<br />
-            의복은 우리의 생각들이 마침내 골목과 조우하기 위해 걸쳐낸 육필 문장이다."
+      <section className="bg-ink text-paper py-16 px-6 sm:px-12 text-center relative overflow-hidden torn-bottom">
+        <div className="max-w-3xl mx-auto space-y-5">
+          <Book className="w-6 h-6 text-burgundy mx-auto pulse-indicator mb-2" />
+          <blockquote className="font-serif text-[13px] sm:text-base md:text-lg leading-loose text-paper-cream font-medium tracking-wide break-keep mx-auto px-2 max-w-2xl">
+            "독서가 고독에 질감을 더하는 원사의 소품질이라면, 의복은 우리의 생각들이 마침내 골목과 조우하기 위해 걸쳐낸 육필 문장이다."
           </blockquote>
-          <p className="text-[10px] font-mono tracking-[0.2em] text-[#8A857C] uppercase">
+          <p className="text-[10px] sm:text-xs font-mono tracking-[0.25em] text-[#8A857C] uppercase pt-2">
             — 서촌 필운대로 정각에서 편찬 —
           </p>
         </div>

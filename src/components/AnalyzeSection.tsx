@@ -175,7 +175,7 @@ export default function AnalyzeSection({ onAnalysisComplete }: AnalyzeSectionPro
                 onDragLeave={handleDrag}
                 onDrop={handleDrop}
                 onClick={triggerFileSelect}
-                className={`border-2 border-dashed rounded-none p-12 md:p-24 min-h-[420px] text-center cursor-pointer transition-all duration-300 flex flex-col items-center justify-center space-y-6 ${
+                className={`border-2 border-dashed rounded-none p-4 sm:p-10 md:p-16 min-h-[340px] sm:min-h-[400px] text-center cursor-pointer transition-all duration-300 flex flex-col items-center justify-center space-y-6 ${
                   dragActive 
                     ? 'border-burgundy bg-[#FAF7F0]' 
                     : 'border-soft-border hover:border-burgundy bg-paper-dark/20 hover:bg-paper-dark/40'
@@ -188,16 +188,16 @@ export default function AnalyzeSection({ onAnalysisComplete }: AnalyzeSectionPro
                   accept="image/*"
                   onChange={handleFileChange}
                 />
-                <UploadCloud className="w-16 h-16 text-burgundy opacity-75 pulse-indicator mb-2" />
-                <div className="space-y-3 w-full max-w-2xl mx-auto">
-                  <p className="font-serif text-base sm:text-lg font-bold text-ink break-keep leading-relaxed">
+                <UploadCloud className="w-12 h-12 sm:w-16 sm:h-16 text-burgundy opacity-75 pulse-indicator" />
+                <div className="space-y-3.5 w-full max-w-3xl mx-auto px-4 sm:px-6">
+                  <p className="font-serif text-sm sm:text-base md:text-lg lg:text-xl font-bold text-ink break-keep leading-relaxed tracking-wide">
                     오늘 착용한 전신 사진 혹은 거울 피팅 사진을 올려주세요
                   </p>
-                  <p className="text-xs sm:text-sm text-silver font-serif max-w-xl mx-auto break-keep leading-relaxed">
+                  <p className="text-[11px] sm:text-xs md:text-sm text-silver font-serif max-w-2xl sm:max-w-3xl mx-auto break-keep leading-relaxed sm:leading-loose tracking-wide">
                     마우스로 이미지 파일을 이곳에 떨어뜨리거나, 이 기판 영역을 선택하여 모바일 사진첩을 엽니다.
                   </p>
                 </div>
-                <div className="pt-4 text-xs font-mono text-[#8C8A91] border-t border-soft-border w-2/3 max-w-md">
+                <div className="pt-4 text-[10px] sm:text-xs font-mono text-[#8C8A91] border-t border-soft-border w-full max-w-2xl mx-auto tracking-normal sm:tracking-widest break-keep leading-relaxed">
                   PNG, JPG, JPEG | 1회용 감정 보장 | No Logging
                 </div>
               </div>
